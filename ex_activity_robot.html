@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>กิจกรรมตัวอย่าง3</title>
-<base target="_top">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>full screen iframe</title>
+	<style type="text/css">
+		html {
+			overflow: auto;
+		}
+		
+		html,
+		body,
+		div,
+		iframe {
+			margin: 0px;
+			padding: 0px;
+			height: 100%;
+			border: none;
+		}
+		
+		iframe {
+			display: block;
+			width: 100%;
+			border: none;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+	</style>
 </head>
-<style>
-body {
-    margin: 0;            /* Reset default margin */
-}
 
-</style>
 <body>
-
-
-<div id="contentframe" style="top: 160px; left: 0px;">
-<iframe src="https://mintana111.wixsite.com/activity15" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe></div>
+	<iframe src="https://mintana111.wixsite.com/activity15"
+			frameborder="0"
+			marginheight="0"
+			marginwidth="0"
+			width="100%"
+			height="100%"
+			scrolling="auto">
+</iframe>
 
 </body>
+
 </html>
